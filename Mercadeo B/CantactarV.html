@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinarios a Domicilio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .vet-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .vet-card h3 {
+            margin: 0 0 0.5rem;
+        }
+        .vet-card p {
+            margin: 0.5rem 0;
+        }
+        .contact-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+        }
+        .contact-btn:hover {
+            background-color: #45a049;
+        }
+        .vet-card {
+    display: flex;
+    align-items: center;
+}
+.vet-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Veterinarios Disponibles</h1>
+        <p>Contacta a un veterinario para que visite tu domicilio</p>
+    </header>
+    <div class="container">
+        <form action="/Reseña.html" method="post">
+        <div class="vet-card">
+            <img src="Foto de perfil.jpg" alt="Foto de perfil" class="vet-card">
+            <h3>Dr. Juan Pérez</h3>
+            <p>Especialista en animales pequeños</p>
+            <p>Teléfono: 555-123-4567</p>
+            <a href="https://wa.me/+584144859764" class="contact-btn" type="submit">Contactar</a>
+        </div>
+        <div class="vet-card">
+            <h3>Dra. María López</h3>
+            <p>Especialista en animales exóticos</p>
+            <p>Teléfono: 555-987-6543</p>
+            <a href="" class="contact-btn">Contactar</a>
+        </div>
+        <div class="vet-card">
+            <h3>Dr. Carlos Gómez</h3>
+            <p>Especialista en emergencias veterinarias</p>
+            <p>Teléfono: 555-456-7890</p>
+            <a href="tel:5554567890" class="contact-btn">Contactar</a>
+            </form>
+    </div>
+    </form>
+</body>
+</html>
