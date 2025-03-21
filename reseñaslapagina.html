@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>PettConnect</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-image: url("Imagenes/fondos.png");
             color: #333;
+            
+            
         }
         header {
-            background-color: #4CAF50;
+            background-color: #4CAF;
             color: white;
             padding: 1rem;
             text-align: center;
@@ -36,17 +39,78 @@
         .button-container a:hover {
             background-color: #45a049;
         }
+        image {
+            width: 100%;
+            height: auto;
+            image-resolution: from-image;
+        }
+
+        button {
+            background-color: #4C79;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            right: -175px;
+            bottom: 60px;
+            position: relative;
+
+        }
+        .btn {
+            background-color: #4C79;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            right: -450px;
+            bottom: -15px;
+            position: fixed;
+            position: relative;
+
+        }
+        .btnright {
+            background-color: #4C79;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            right: 230px;
+            bottom: -65px;
+            position: relative;
+        }
     </style>
 </head>
 <body>
     <header>
+        <form action="/Mercadeo B/Maltratoanimal.html">
+        <button class="btnright" ><span>Denuncia el Maltrato animal</span></button>
+        </form>
         <h1>PetConnect</h1>
+        <div>
+        <button ><a href="https://www.instagram.com/petconnect_13?igsh=cXlrdWJvZ3JyYjVn"><span>Contactanos</span></a></button>
+        </div>
     </header>
     <main>
+        <H3>Petconnect es una herramienta integral que no solo conecta a dueños de mascotas con veterinarios, 
+            sino que también aborda el maltrato animal. Con su enfoque en el bienestar animal, acceso a recursos, y una comunidad solidaria, 
+            PetConnect promueve la responsabilidad hacia los animales y facilita el cuidado adecuado.
+        </H3>
         <h2>¿Por qué elegirnos?</h2>
         <p>
-            Ofrecemos servicios veterinarios a domicilio para garantizar la salud y bienestar de tus mascotas sin que tengas que salir de casa. 
-            Nuestro equipo de profesionales está altamente capacitado para atender cualquier necesidad médica de tus animales.
+         Acceso Rápido a Veterinarios:
+
+            <li> Reservas en Línea: Facilita la programación de citas.</li>
+
+            <li> Información Detallada: Perfiles de veterinarios con especialidades y tarifas.</li>
+
+            <li> Denuncias: Permite reportar maltrato especificando información del denunciante y descripción del incidente.</li>
+
+            <li> Descuentos en Servicios: Ofertas especiales para usuarios. </li>
+
+            <li> Programas de Lealtad: Recompensas para usuarios frecuentes. </li>
+
         </p>
         <h3>Servicios que ofrecemos:</h3>
         <ul>
@@ -56,9 +120,17 @@
             <li>Atención de emergencias</li>
             <li>Asesoramiento nutricional</li>
         </ul>
-        <div class="button-container">
-            <a href="/Mercadeo B/registro.html">Ir al Registro de Cliente</a>
+                
+    <form action="/Mercadeo B/registro.html">
+        <div class="cont">
+            <button class="btn" href="/Mercadeo B/registro.html" ><span>Ir al Registro de Cliente</span></button>
         </div>
+    </form>
+
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

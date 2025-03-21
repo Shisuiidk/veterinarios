@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncia de Maltrato Animal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form div {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Denuncia de Maltrato Animal</h1>
+    </header>
+    <main>
+        <form action="/enviar-denuncia" method="POST">
+            <div>
+                <label for="nombre">Tu Nombre (opcional):</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+            </div>
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+            </div>
+            <div>
+                <label for="ubicacion">Ubicación del Caso:</label>
+                <input type="text" id="ubicacion" name="ubicacion" placeholder="Escribe la dirección o ciudad" required>
+            </div>
+            <div>
+                <label for="descripcion">Descripción del Caso:</label>
+                <textarea id="descripcion" name="descripcion" rows="5" placeholder="Describe el caso de maltrato animal" required></textarea>
+            </div>
+            <div>
+                <label for="evidencia">Subir Evidencia (opcional):</label>
+                <input type="file" id="evidencia" name="evidencia" accept="image/*,video/*">
+            </div>
+            <button type="submit">Enviar Denuncia</button>
+        </form>
+    </main>
+</body>
+</html>
